@@ -1,10 +1,28 @@
 <html>
   <head>
-    <script src="Functions.js"></script>
+   <meta charset="UTF-8">
   </head>
   <body>
-    
-    <center>  <h1>Data is stored in json formate check "Functions.js" file to verify </h1>
+     <script src="Function.js"></script>
+    <center>  <h1>Experiment</h1>
+      <br /><br /><br /><br />
+
+       <select style="width: 150px; height: 30px;"
+        id="lang"  autocomplete="off" onchange="my_select()">
+        <option value="select" >---Select Language--</option>
+        <option value="English">English</option>
+        <option value="hindi">Hindi</option>
+      </select>
+      
+
+      <br /><br /><br />
+      <h3 style="color: blue;">
+        Form a sentence (Declarative or Interrogative or any other type) from
+        the given words<br />
+        (select the buttons in proper order)
+</h3>
+<p id="result"> </p>
+<button onclick="check()">ANSWER</button>
     </center>
 </body>
 </html>
