@@ -152,7 +152,6 @@ function finals(id,value){
 function resets(){
   
   document.getElementById("demo5").innerHTML = "";
-    
     document.getElementById("demo6").innerHTML ="";
   document.getElementById("demo4").innerHTML = "";
     word_count=0;
