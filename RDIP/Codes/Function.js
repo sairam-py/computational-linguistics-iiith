@@ -102,11 +102,36 @@ function compares(){
             return;
         }
     }
-    document.getElementById('demo9').innerHTML = "WRONG";
+      document.getElementById('demo9').innerHTML = "WRONG";
 
+    document.getElementById("demo10").innerHTML = "<center><button id='showansbtn' onclick='gets()'>Get Correct Sentence</button></center>"
 }
 
-//hiding
+//getting correct ans
+function gets(){
+
+    answers="";
+    document.getElementById("output").innerHTML = ""
+    var totalanswers = 0;
+
+if (document.getElementById("language").value=='English'){
+    totalanswers = array1[r].length-1;
+    document.getElementById('demo10').innerHTML = "<center><button id='showansbtn' onclick='hides()'>hide correct answer</button></center>"
+    for(i=0;i<=totalanswers;i++){
+      answers += "<center>"+array1[r][i]+"<br></center>"
+    }
+    document.getElementById("output").innerHTML = answers;
+  }
+    else if(document.getElementById("language").value=='Hindi'){
+    totalanswers = array2[r].length-1;
+    document.getElementById('demo10').innerHTML = "<center><button id='showansbtn' onclick='hides()'>hide correct answer</button></center>"
+    for(i=0;i<=totalanswers;i++){
+      answers += "<center>"+array2[r][i]+"<br></center>"
+    }
+    document.getElementById("output").innerHTML = answers;
+  }
+
+}//hiding
 function hides(){
   document.getElementById('demo10').innerHTML = "<center><button id='showansbtn' onclick='toggle()'>Get Correct Sentence</button></center>"
   document.getElementById("output").innerHTML = "";
