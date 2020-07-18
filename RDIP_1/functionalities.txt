@@ -1,0 +1,8 @@
+Functionalites  Unit - 4 assignment 
+1. Dropdown Corpus1,2,3 to be appeared.
+2. data should appear when choosen.
+3. "Enter the number of tokens and types for the above corpus" input fields is appear in the form of table.
+      it takes two data, tokens & types 
+4.submit button			
+5.new types
+6.red green colors in text boxes
